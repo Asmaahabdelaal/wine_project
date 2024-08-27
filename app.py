@@ -1,6 +1,7 @@
 import streamlit as st
 import joblib
 import numpy as np
+from sklearn.metrics import euclidean_distances
 
 # Load the KNN model from the same directory
 knn_model = joblib.load("model.pkl")
